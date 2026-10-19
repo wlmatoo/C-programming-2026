@@ -1,9 +1,14 @@
 #include <stdio.h>
 
-int main(void) {
-    int total = 7;
-    int size = 2;
-    printf("몫: %d\n", total / size);
-    printf("나머지: %d\n", total % size);
+int main(void)
+{
+    int char_size = sizeof(char);
+    int int_size = sizeof(int);
+    int float_size = sizeof(float);
+    int double_size = sizeof(double);
+
+    printf("%d %d %d %d\n",
+        char_size, int_size,
+        float_size, double_size);
     return 0;
 }
